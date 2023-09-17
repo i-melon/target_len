@@ -1,0 +1,52 @@
+@media (max-width:1385px){
+    .content5{flex-direction: column; gap: 24px;}
+    .content5colrow{justify-content: space-between;}
+}
+@media (max-width:1000px){
+    .buttonRow{display: none;}
+    .headerContacts{display: none;}
+    .dropdown{display: flex;}
+    h1{font-size: 24px; line-height: 32px;}
+    .instAnimation{display: none;}
+    .instAnimation2{display: flex;}
+    .firstTitleBlock{margin-top: 51px;}
+    .firstDesktop{display: none}
+    .pTitle{font-size: 15;line-height: 20px; margin-bottom: 16px;}
+    .bc3{display: none;}
+    .content4rowCol{flex-direction: column;align-items: flex-start;gap: 0;}
+    .rowCol4Item{margin-top: 32px;}
+    .miniText{font-size: 15px;line-height: 22px; }
+    .block9{flex-direction: column; gap: 24px;}
+}
+@media (max-width:768px){
+    .controllerRow{flex-direction: column; gap: 10px;}
+    header{margin: 10px;}
+    .sliderButton{width: 64px;}
+    .firstTitleBlock{margin-left: 10px;}
+    h1{font-size: 20px; line-height: 24px;}
+    .infoRow1{margin-left: 10px;}
+    .info1Item1{flex-direction: column-reverse;}
+    h4{font-size: 26; line-height: 28px;}
+    .slider1{width: 1000px; transition: all ease 20s;}
+    .block2{padding: 64px 16px;}
+    .slider2{margin-top: 41px;}
+    .block3{padding: 64px 16px;}
+    .mainButton{align-self: stretch;}
+    .block3rowCol{width: 100%;}
+    p{font-size: 16px;line-height: 28px;font-family:customFont;font-weight: 450;}
+    .showVideo{display: none;}
+    .block4{padding: 64px 16px;}
+    .content5row{display: none;}
+    .block5{padding: 64px 16px;}
+    .textRow5{flex-direction: column;align-items: flex-start;gap: 16px;}
+    .miniText5{font-size: 16px;line-height: 28px;font-weight: 450;}
+    .block5 h2{font-size: 32px;line-height: 40.061px; }
+    .block5 .text5{font-size: 13px;line-height: 15.023px; }
+    .block6{padding: 64px 16px;}
+    .block7{padding: 64px 16px;}
+    .block8{padding: 64px 16px;}
+    .block9{padding: 64px 16px; }
+    .item8{flex-direction: column;}
+    .text8{width: 100%;}
+    .buttonRow9{flex-direction: column; align-items: stretch;}
+}
