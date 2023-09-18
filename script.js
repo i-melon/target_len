@@ -23,12 +23,13 @@ const slider2 = document.querySelector('.contentLine2')
 document.querySelector('#next2').addEventListener('click', function(){
     counter++
     if (counter>1){counter=0}
-    slider2.style.left = -100*counter + '%'
+    slider2.style.transition = 'all ease 1s'
+    slider2.style.left = -400*counter + 'px'
 });
 document.querySelector('#prev2').addEventListener('click', function(){
     counter--
     if (counter<0){counter=1}
-    slider2.style.left = -100*counter + '%'
+    slider2.style.left = -400*counter + 'px'
 });
 
 
@@ -36,26 +37,26 @@ counter6 = 0;
 const slider6 = document.querySelector('.sliderLine6')
 document.querySelector('#next6').addEventListener('click', function(){
     counter6++
-    if (counter6>1){counter6=0}
-    slider6.style.left = -100*counter6 + '%'
+    if (counter6>2){counter6=0}
+    slider6.style.left = -485*counter6 + 'px'
 });
 document.querySelector('#prev6').addEventListener('click', function(){
     counter6--
-    if (counter6<0){counter6=1}
-    slider6.style.left = -100*counter6 + '%'
+    if (counter6<0){counter6=2}
+    slider6.style.left = -485*counter6 + 'px'
 });
 
 counter7 = 0;
 const slider7 = document.querySelector('.sliderLine7')
 document.querySelector('#next7').addEventListener('click', function(){
     counter7++
-    if (counter7>1){counter7=0}
-    slider7.style.left = -100*counter7 + '%'
+    if (counter7>2){counter7=0}
+    slider7.style.left = -380*counter7 + 'px'
 });
 document.querySelector('#prev7').addEventListener('click', function(){
     counter7--
-    if (counter7<0){counter7=1}
-    slider7.style.left = -100*counter7 + '%'
+    if (counter7<0){counter7=2}
+    slider7.style.left = -380*counter7 + 'px'
 });
 
 
@@ -80,5 +81,5 @@ document.querySelector('.dialog').addEventListener('click', function(){
     dialog.style.display = 'none';
 });
 document.querySelector('.modal').addEventListener('click', function(){
-    dialog.style.display = 'block';
+    dialog.style.display = 'none';
 });
