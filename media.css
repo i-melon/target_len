@@ -27,9 +27,10 @@
     .infoRow1{margin-left: 10px;}
     .info1Item1{flex-direction: column-reverse;}
     h4{font-size: 26; line-height: 28px;}
-    .slider1{width: 1000px; transition: all ease 20s;}
+    .slider1{width: 4000px; transition: all ease 20s;}
     .block2{padding: 64px 16px;}
-    .slider2{margin-top: 41px;}
+    .slider2{margin-top: 41px; display: none;}
+    .slider2M{display: flex;}
     .block3{padding: 64px 16px;}
     .mainButton{align-self: stretch;}
     .block3rowCol{width: 100%;}
@@ -43,10 +44,17 @@
     .block5 h2{font-size: 32px;line-height: 40.061px; }
     .block5 .text5{font-size: 13px;line-height: 15.023px; }
     .block6{padding: 64px 16px;}
+    .slider6{display: none;}
+    .buttonRow6{display: none;}
+    .buttonRow6M{display: flex;}
+    .slider6M{display: flex;}
+    .item6{width: 270px;}
     .block7{padding: 64px 16px;}
     .block8{padding: 64px 16px;}
     .block9{padding: 64px 16px; }
-    .item8{flex-direction: column;}
+    .block9 h1{font-size: 36px;line-height: 32px;}
+    .item8{flex-direction: column; position: relative;}
     .text8{width: 100%;}
     .buttonRow9{flex-direction: column; align-items: stretch;}
+    #next8{position: absolute; top:10;right: 0;}
 }

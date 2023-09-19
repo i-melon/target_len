@@ -73,9 +73,8 @@ header{
     margin: 96px 112px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 30px;
+    gap: 50px;
 }
 .firstDesktop{
     display: flex;
@@ -88,7 +87,7 @@ header{
     margin-bottom: 80px;
 }
 .slider1{
-    width: 1440px;
+    width: 5760px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -120,7 +119,23 @@ header{
     position: relative;
     transition: all ease 1s;
 }
-.sliderButton{
+.slider2M{
+    display: none;
+    margin-top: 68px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+.contentLine2M{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+    padding: 0px 14px;
+    position: relative;
+    transition: all ease 1s;
+}
+.sliderButtonL{
     display: inline-flex;
 height: 64px;
 padding: var(--spacing-l, 16px) 20px;
@@ -130,10 +145,31 @@ flex-shrink: 0;
 border-radius: 100%;
 background: #000;
 border: none;
+transition: all ease .2s;
+width: 64px;
 }
-.sliderButton:hover{
+.sliderButtonR{
+    display: inline-flex;
+    width: 64px;
+height: 64px;
+padding: var(--spacing-l, 16px) 20px;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+border-radius: 100%;
+background: #000;
+border: none;
+transition: all ease .2s;
+}
+.sliderButtonL:hover{
+padding-right: 30px;
+padding-left: 15px;
 
-background: rgb(77, 77, 77);
+}
+.sliderButtonR:hover{
+    padding-right: 15px;
+    padding-left: 30px;
+    
 }
 #prev2{left: 0;}
 #next2{right: 0;}
@@ -569,6 +605,20 @@ line-height: 20px; /* 142.857% */
     position: relative;
 }
 
+.buttonRow6M{display: none;}
+.slider6M{
+    display: none;
+    overflow: hidden;
+    margin-top: 56px;
+    position: relative;
+}
+.sliderLine6M{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    transition: all ease 1s;
+    position: relative;
+}
 
 
 
@@ -580,7 +630,8 @@ line-height: 20px; /* 142.857% */
 }
 .block7 p{color: rgba(250, 250, 250, 1);}
 .block7 h1{color: rgba(250, 250, 250, 1);}
-.block7 .sliderButton{background-color: #FAFAFA;}
+.block7 .sliderButtonL{background-color: #FAFAFA;}
+.block7 .sliderButtonR{background-color: #FAFAFA;}
 .block7 .controllerRow{margin-top: 48px;}
 .block7 .sliderButton:hover{background-color: #acacac;}
 .block7 h2{
