@@ -93,7 +93,8 @@ transition: all ease .2s;
     line-height: 24px; /* 150% */
 }
 .contactButton:hover{
-    background: rgb(77, 77, 77);
+    padding: var(--spacing-m, 12px) 24px;
+    gap: var(--spacing-s, 16px);
 }
 a{
     text-decoration: none;
@@ -130,6 +131,8 @@ a:hover{
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
+    top: 0;
+    right: 0;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;

@@ -1,21 +1,60 @@
-const carusel = document.querySelector('.infinity')
-const slider = document.querySelector('.slider1');
-const slides = document.querySelectorAll('.infItem');
+// const carusel = document.querySelector('.infinity')
+// const slider = document.querySelector('.slider1');
+// const slides = document.querySelectorAll('.infItem');
 
+
+// Получаем элементы слайдера и слайдов
+const sliderContainer = document.querySelector('.slider-container');
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+
+// Дублируем слайды, чтобы создать бесконечный эффект
+const clonedSlides = [...slides].map((slide) => slide.cloneNode(true));
+clonedSlides.forEach((clonedSlide) => slider.appendChild(clonedSlide));
+
+// Автоматический переход на следующий слайд каждые 5 секунд (или ваш интервал)
 let currentIndex = 0;
-const slideInterval = 0;// Интервал между сменой слайдов (в миллисекундах)
 
 function nextSlide() {
-    slider.style.transitionTimingFunction = 'linear';
-    slider.style.left = -200 + '%'
+  currentIndex++;
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+    slider.style.transition = 'none';
+    slider.style.transform = 'translateX(0)';
+    setTimeout(() => {
+      slider.style.transition = '';
+    }, 0);
+  }
+  const translateXValue = `-${currentIndex * 100}%`;
+  slider.style.transform = `translateX(${translateXValue})`;
 }
 
+setInterval(nextSlide, 5000); // Измените интервал, если нужно
 
 
-for (let i = 1; i <= 5; i++) {
-    setInterval(nextSlide, slideInterval);
-    slider.style.left = 100 + '%'// Output: 1, 2, 3, 4, 5
-  }
+
+const slider3 = document.querySelector('.slider3')
+function nextSlide3(){
+    slider3.style.left='-320px'
+}
+nextSlide3()
+
+
+
+
+
+// let currentIndex = 0;
+// const slideInterval = 1000;// Интервал между сменой слайдов (в миллисекундах)
+// round = 0
+// function nextSlide() {
+//     if (round = 0){round = 0}
+//     if (round ==0){round=1360}
+//     slider.style.transitionTimingFunction = 'linear';
+//     slider.style.left = -round + 'px'
+// }
+
+// setInterval(nextSlide, slideInterval);
+    
 
 
 counter = 0;

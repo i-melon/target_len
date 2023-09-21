@@ -1,5 +1,5 @@
 @media (max-width:1385px){
-    .content5{flex-direction: column; gap: 24px;}
+    .content5{flex-direction: column; gap: 24px; max-width: 715px;}
     .content5colrow{justify-content: space-between;}
 }
 @media (max-width:1000px){
@@ -19,6 +19,7 @@
     .block9{flex-direction: column; gap: 24px;}
 }
 @media (max-width:768px){
+    .slide{width: 200%;}
     .controllerRow{flex-direction: column; gap: 10px;}
     header{margin: 10px;}
     .sliderButton{width: 64px;}
@@ -37,6 +38,9 @@
     p{font-size: 16px;line-height: 28px;font-family:customFont;font-weight: 450;}
     .showVideo{display: none;}
     .block4{padding: 64px 16px;}
+    .content4rowCol h1{font-size: 40px;}
+    .content4rowCol .miniText{font-size: 15px; line-height: 22px;}
+    .rowCol4Item{gap: 16px;}
     .content5row{display: none;}
     .block5{padding: 64px 16px;}
     .textRow5{flex-direction: column;align-items: flex-start;gap: 16px;}
@@ -50,6 +54,8 @@
     .slider6M{display: flex;}
     .item6{width: 270px;}
     .block7{padding: 64px 16px;}
+    #prev7{position: absolute; left: 0; top: 440px; z-index: 3;margin-left: 11px;}
+#next7{position: absolute; right: 0; top: 440px; z-index: 2;margin-right: 11px;}
     .block8{padding: 64px 16px;}
     .block9{padding: 64px 16px; }
     .block9 h1{font-size: 36px;line-height: 32px;}
